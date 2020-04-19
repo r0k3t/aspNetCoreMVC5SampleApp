@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "defaultDestination": "wwwroot/lib",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@4.4.1",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "jquery@3.5.0",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "bootswatch@4.4.1",
+      "destination": "wwwroot/lib/bootswatch/"
+    },
+    {
+      "library": "font-awesome@5.13.0",
+      "destination": "wwwroot/lib/font-awesome/"
+    }
+  ,
+{
+  "provider": "unpkg",
+  "library": "bootstrap@4.4.1",
+  "destination": "wwwroot/lib/bootstrap/"
+}
+]
+}

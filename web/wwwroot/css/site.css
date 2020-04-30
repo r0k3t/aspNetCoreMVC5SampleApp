@@ -9,6 +9,12 @@
 .colPaddingOne {
   padding: .1em; }
 
+.colPaddingHeader {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: .5em; }
+
 .companySubtext {
   font-size: .7rem;
   color: #e9ecef;

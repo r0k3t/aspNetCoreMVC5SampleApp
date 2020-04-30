@@ -1,5 +1,6 @@
 ﻿using System;
 using Core.Interfaces;
+using Core.Interfaces.Types;
 
 namespace Core.BaseTypes
 {

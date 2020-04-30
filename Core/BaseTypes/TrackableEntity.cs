@@ -1,9 +1,9 @@
 ﻿using System;
-using Core.Interfaces;
+using Core.Interfaces.Types;
 
 namespace Core.BaseTypes
 {
-    public class TrackableEntity : ITrackable, ITrackableEntity
+    public class TrackableEntity : ITrackableEntity
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }

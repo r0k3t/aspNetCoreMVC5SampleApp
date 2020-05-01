@@ -1,0 +1,17 @@
+﻿@using Core.Enums
+@model Core.Models.Phone
+
+<div class="form-group" id="phoneInputGroup">
+    <div class="col">
+        <label asp-for="Number">Phone Number</label>
+        <input asp-for="Number" class="form-control" id="inputPhoneNumber" autocomplete="off" />
+       
+    </div>
+    <div class="col">
+        <label asp-for="PhoneType"></label>
+        <select id="inputPhoneType" class="form-control" asp-for="PhoneType" asp-items="Html.GetEnumSelectList<PhoneTypeEnum>()">
+            <option selected="selected" value="999">Please select</option>
+        </select>
+    </div>
+
+</div>

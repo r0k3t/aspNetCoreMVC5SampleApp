@@ -1,0 +1,27 @@
+﻿@model Core.ViewModels.ContactViewModel
+
+<h2>Add New Contact</h2>
+<hr />
+<form asp-action="AddUser">
+    <div class="row">
+        <div class="col">
+            <label for="inputFirstName">First Name</label>
+            <input asp-for="Contact.FirstName" class="form-control" id="inputFirstName"/>
+            <span asp-validation-for="Contact.FirstName" class="text-danger"></span>
+        </div>
+        <div class="col">
+            <label for="inputLastName">Last Name</label>
+            <input asp-for="Contact.LastName" class="form-control" id="inputLastName"/>
+            <span asp-validation-for="Contact.LastName" class="text-danger"></span>
+        </div>
+    </div>
+    
+    <partial name="_Phone" for="Phone"/>
+    <partial name="_Address" for="Address"/>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+

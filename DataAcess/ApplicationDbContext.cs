@@ -27,7 +27,7 @@ namespace DataAccess
         public virtual DbSet<ContactPhone> ContactPhones { get; set; }
         public virtual DbSet<Phone> Phones { get; set; }
         public virtual DbSet<Note> Notes { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        
 
         public override int SaveChanges()
         {
@@ -75,14 +75,6 @@ namespace DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ConfigureTrackable<User>();
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.Property(e => e.UserType)
-                    .HasColumnName("UserTypeId")
-                    .HasConversion(x => (int) x, x => (UserTypeEnum) x);
-            });
-
             modelBuilder.ConfigureTrackable<Address>();
             modelBuilder.Entity<Address>(entity =>
             {
